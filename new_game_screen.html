@@ -26,15 +26,16 @@
         <input type="text" class="form-control" id="playerName" value="">
       </div>
 
+
       <label for="difficultySelection" class="col-sm-2 col-form-label">Difficulty</label>
       <div class="col-sm-10">
         <select class="custom-select my-1 mr-sm-2" id="difficultySelection">
           <option selected value="0">Choose...</option>
-          <option value="1">Beginner</option>
-          <option value="2">Easy</option>
-          <option value="3">Medium</option>
-          <option value="4">Hard</option>
-          <option value="5">Impossible</option>
+          <option value="Beginner">Beginner</option>
+          <option value="Easy">Easy</option>
+          <option value="Medium">Medium</option>
+          <option value="Hard">Hard</option>
+          <option value="Impossible">Impossible</option>
         </select>
       </div>
     </div>
@@ -42,8 +43,8 @@
   </form>
 
   <center>
-    <button type="button" class="btn btn-primary">Create Player</button type="button" class="btn btn-primary">
+    <button type="button" onclick="createPlayer()" class="btn btn-primary">Create Player</button type="button" class="btn btn-primary">
   </center>
-
+<script src="js/new_game.js"></script>
 </body>
 </html>
