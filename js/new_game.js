@@ -1,15 +1,10 @@
-var name;
-var diff; 
-
 function createPlayer() {
-	name = document.getElementById("playerName").value;
-	diff = document.getElementById("difficultySelection").value;
+	var name = document.getElementById("playerName").value;
+	var diff = document.getElementById("difficultySelection").value;
+	localStorage.setItem("name",name);
+	localStorage.setItem("diff",diff);
 	document.location.href = 'player_created.html';
     }
 
 
 
-function playerCreated(){
-	document.getElementById("diff").innerHTML = diff;
-	document.getElementById("name").innerHTML = name;
-}
